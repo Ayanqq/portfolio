@@ -10,6 +10,7 @@ import Icon3 from "./../../../assets/images/icon-3.svg"
 import Photo1 from "./../../../assets/images/proj-1.jpeg"
 import Photo2 from "./../../../assets/images/proj-2.jpeg"
 import Photo3 from "./../../../assets/images/proj-3.jpeg"
+import {Icon} from "../../../components/icon/Icon";
 
 
 export const Skills = () => {
