@@ -82,7 +82,7 @@ export const Contact = () => {
 
 const StyledContact = styled.section`
   display: flex;
-  width: 100vw;
+  width: 100%;
   gap: 50px;
 `
 
