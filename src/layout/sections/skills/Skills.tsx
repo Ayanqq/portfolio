@@ -40,5 +40,6 @@ export const Skills = () => {
 
 const StyledSkills = styled.section`
     padding:100px 0 0;
+  
     
 `

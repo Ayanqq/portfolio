@@ -1,7 +1,6 @@
 import React from 'react';
 import iconsSprite from '../../assets/images/icons-sprite.svg'
-import {type} from "os";
-import styled from "styled-components";
+
 
 
 type IconPropsType = {

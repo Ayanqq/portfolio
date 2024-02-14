@@ -20,17 +20,15 @@ export const Header = () => {
         </StyledHeader>
 
     )
-        ;
 };
 
 
 const StyledHeader = styled.header`
   background-color: rgba(31, 31, 32, 0.9);
   padding:10px 0;
-  //position:fixed;
+  position:sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99999;
-  box-shadow: 0 0 74px -10px #7572D5;
 `

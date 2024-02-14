@@ -25,12 +25,14 @@ const StyledTestimony = styled.section`
 
   ${IconWrapper} {
     margin:52px 0 72px;
-
-    &::before {
-      border-radius: 0;
-      transform: translate(-50%, -50%) rotate(45deg);
+    position:relative;
+    border-radius: 0;
+    
+    ${IconWrapper}::before {
       width: 80px;
       height: 80px;
+      position:absolute;
+      display:inline-block;
     }
   }
 `
