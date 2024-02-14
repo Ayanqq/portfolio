@@ -10,8 +10,8 @@ export const ContactInfo = (props: ContactInfoPropsType) => {
     return (
         <StyledContactInfo>
             <StyledInfo>
-                <h5>{props.leftText}</h5>
-                <span>{props.rightText}</span>
+                <StyledLeftText>{props.leftText}</StyledLeftText>
+                <StyledRightText>{props.rightText}</StyledRightText>
             </StyledInfo>
         </StyledContactInfo>
     );
@@ -19,15 +19,26 @@ export const ContactInfo = (props: ContactInfoPropsType) => {
 
 
 const StyledContactInfo = styled.div`
-
-  
 `
 
 
 const StyledInfo = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  border:1px solid black;
-  gap:20px;
+  padding-bottom:16px;
+`
+const StyledLeftText = styled.h5 `
+  
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  text-transform: capitalize;
+`
+
+const StyledRightText = styled.span `
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  text-transform: capitalize;
 `

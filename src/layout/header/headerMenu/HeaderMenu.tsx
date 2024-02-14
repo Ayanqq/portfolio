@@ -36,7 +36,7 @@ const StyledHeaderMenu = styled.nav`
 `
 
 const Link = styled.a`
-
+  color:${theme.colors.accent};
   font-size: 30px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
@@ -50,7 +50,6 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow-y: hidden;
-  //outline: 1px solid red;
   color: ${theme.colors.accent};
 
 

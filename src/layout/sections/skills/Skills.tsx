@@ -30,6 +30,8 @@ export const Skills = () => {
                           imgSrc={Photo2}/>
                     <Card description={"responsive design"}
                           title={"I build landing pages and responsive websites and web App"} imgSrc={Photo3}/>
+                    <Card description={"responsive design"}
+                          title={"I build landing pages and responsive websites and web App"} imgSrc={Photo3}/>
                 </FlexWrapper>
             </Container>
         </StyledSkills>
@@ -37,8 +39,6 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
+    padding:100px 0 0;
+    
 `
