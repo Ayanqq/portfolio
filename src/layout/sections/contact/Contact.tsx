@@ -124,6 +124,10 @@ const StyledForm = styled.form`
     resize: none;
     height: 210px;
   }
+  
+  ${Button} {
+    background-color: ${theme.colors.accent};
+  }
 `
 
 const StyledLabel = styled.form`
