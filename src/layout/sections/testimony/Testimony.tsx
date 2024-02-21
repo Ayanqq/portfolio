@@ -6,7 +6,6 @@ import {Slider} from "../../../components/slider/Slider";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {IconWrapper} from "../skills/skill/Skill";
 import {Container} from "../../../components/Container";
-import {theme} from "../../../styles/Theme";
 
 export const Testimony = () => {
     return (
