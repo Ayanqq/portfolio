@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../../../styles/Theme";
 import {Icon} from "../../../../components/icon/Icon";
+import {font} from "../../../../styles/Common";
 
 
 type CardPropsType = {
@@ -35,14 +36,26 @@ const StyledCard = styled.div`
   width: 100%;
   border-radius: 30px;
   display: flex;
-  justify-content: space-between;
   padding: 0 51px;
-  margin-bottom: 108px;
+  flex-wrap:wrap;
+  
+  column-gap:125px;
+  row-gap:50px;
+  
+  @media screen and (max-width:1168px) {
+    max-width:500px;
+    width:100%;
+  }
+  
+  @media ${theme.media.mobile} {
+    margin-bottom:50px;
+  }
 
 `
 const LinkWrapper = styled.div`
   display: flex;
   align-items: center;
+  color:${theme.colors.accent};
 `
 
 const Link = styled.a`
@@ -61,11 +74,18 @@ const DescriptionCard = styled.span`
 `
 
 const TitleCard = styled.h2`
+  ${font({weight:700, Fmax:35, Fmin:24})}
+  
   max-width: 380px;
-  font-size: 35px;
-  font-weight: 700;
+  //font-size: 35px;
+  //font-weight: 700;
   text-align: left;
   padding: 36px 0 70px;
+  
+  @media ${theme.media.mobile} {
+    padding:24px 0 45px;
+  }
+  
 `
 
 const StyledText = styled.div`
@@ -77,13 +97,19 @@ const StyledText = styled.div`
 
 const StyledImg = styled.img`
   border-radius: 20px;
-  width: 555px;
-  height: 394px;
+  max-width: 555px;
+  width:100%;
+  max-height: 394px;
+  
+  //object-fit: cover;
 
 
 `
 
 const PhotoWrapper = styled.div`
   transform: translateY(-50px);
+  
+  @media ${theme.media.mobile} {
+    transform: translateY(-25px);
+  }
 `
-// 1. У ссылки задается высота 57px

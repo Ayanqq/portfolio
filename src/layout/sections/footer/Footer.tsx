@@ -3,13 +3,14 @@ import styled from "styled-components";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Icon} from "../../../components/icon/Icon";
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 
 export const Footer = () => {
     return (
         <StyledFooter>
             <FlexWrapper direction={"column"} align={"center"}>
-                <Title>Ayan</Title>
+                <Name>Ayan</Name>
                 <SocialList>
 
                         <SocialItem>
@@ -49,11 +50,13 @@ const StyledFooter = styled.footer`
   padding:40px 0;
   
 `
-const Title = styled.h3`
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 22px;
-  font-weight: 700;
+const Name = styled.h3`
+  //font-family: 'Josefin Sans', sans-serif;
+  //font-size: 22px;
+  //font-weight: 700;
   letter-spacing: 3px;
+
+  ${font({family: "'Josefin Sans', sans-serif ", weight: 700, Fmax: 22, Fmin: 16})};
     
 `
 const SocialList = styled.ul`
@@ -91,7 +94,3 @@ const Copyright = styled.small`
   font-weight: 400;
   text-align: center;
 `
-
-
-// 1. WrapperIcon - размер 21х28, но иконка 21х21 из-за этого не центрируется
-

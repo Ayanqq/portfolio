@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
+import {theme} from "../../../styles/Theme";
 
 export const Slogan = () => {
     return (
@@ -18,4 +19,14 @@ const StyledSlogan = styled.section`
   align-items: center;
   flex-direction: column;
   min-height: 30vh;
+  text-align: center;
+  
+  ${Button} {
+    background-color: transparent;
+    
+    &::before {
+      background-color: ${theme.colors.accent};
+    }
+  }
+  
 `

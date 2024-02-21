@@ -14,22 +14,20 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
-            <SectionTitle>What I Do</SectionTitle>
-                <FlexWrapper justify={"space-between"} align={"center"}>
+                <SectionTitle>What I Do</SectionTitle>
+                <FlexWrapper justify={"space-between"} align={"center"} wrap={"wrap"} gap={"30px"} margin={"0 0 120px 0"}>
                     <Skill src={"figmaSvg"} number={"01"} title={"UX/UI Design"}/>
                     <Skill src={"scSvg"} number={"02"} title={"Front End Development"}/>
                     <Skill src={"tsSvg"} number={"03"} title={"Responsive Design"}/>
                 </FlexWrapper>
 
 
-                <FlexWrapper direction={"column"} align={"center"}>
+                <FlexWrapper direction={"column"} align={"center"} wrap={"wrap"} gap={"100px"}>
                     <Card description={"UX/UI Design"} title={"Research, Design, Prototype, and Animation"}
                           imgSrc={Photo1}/>
                     <Card description={"Front end development"}
                           title={"Implement UX design into live and user friendly "}
                           imgSrc={Photo2}/>
-                    <Card description={"responsive design"}
-                          title={"I build landing pages and responsive websites and web App"} imgSrc={Photo3}/>
                     <Card description={"responsive design"}
                           title={"I build landing pages and responsive websites and web App"} imgSrc={Photo3}/>
                 </FlexWrapper>
@@ -39,7 +37,9 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-    padding:100px 0 0;
-  
-    
+  ${FlexWrapper} {
+    &:first-child {
+      background-color: darkgreen;
+    }
+  }
 `

@@ -46,7 +46,7 @@ export const Contact = () => {
     return (
         <StyledContact>
             <Container>
-                <FlexWrapper gap={"30px"}>
+                <FlexWrapper gap={"30px"} wrap={"wrap-reverse"} rowGap={"50px"}>
                     <StyledContactForm>
                         <FlexWrapper direction={"column"}>
                             <SectionTitle>Leave Us Your Info</SectionTitle>
@@ -162,7 +162,12 @@ const StyledInput = styled.input`
 
 
 const StyledInfo = styled.div`
-  width: 370px;
+  width:370px;
+  
+  @media screen and (max-width:715px) {
+    width:100%;
+}
+  
 
   ${IconWrapper} {
     width: 40px;
@@ -178,11 +183,11 @@ const StyledInfo = styled.div`
 
 const StyledInfoCard = styled.div`
   background-color: ${theme.colors.secondaryBg};
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
   padding: 25px 25px 0;
+  
+  ${IconWrapper} {
+    min-width:0;
+  }
 `
-// 1. Как первому заголовку сделать flex-start, а второму заголовку flex-end
 
 

@@ -5,17 +5,21 @@ import {Icon} from "../../../components/icon/Icon";
 import {Slider} from "../../../components/slider/Slider";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {IconWrapper} from "../skills/skill/Skill";
+import {Container} from "../../../components/Container";
+import {theme} from "../../../styles/Theme";
 
 export const Testimony = () => {
     return (
         <StyledTestimony>
-            <SectionTitle>Testimony</SectionTitle>
-            <FlexWrapper direction={"column"} align={"center"}>
-                <IconWrapper>
-                    <Icon iconSrc={"quoteSvg"}/>
-                </IconWrapper>
-                <Slider/>
-            </FlexWrapper>
+            <Container>
+                <SectionTitle>Testimony</SectionTitle>
+                <FlexWrapper direction={"column"} align={"center"}>
+                    <IconWrapper>
+                        <Icon iconSrc={"quoteSvg"}/>
+                    </IconWrapper>
+                    <Slider/>
+                </FlexWrapper>
+            </Container>
         </StyledTestimony>
     );
 };
@@ -24,15 +28,23 @@ export const Testimony = () => {
 const StyledTestimony = styled.section`
 
   ${IconWrapper} {
-    margin:52px 0 72px;
-    position:relative;
+    position: relative;
     border-radius: 0;
+    z-index:1;
+    background-color: transparent;
     
-    ${IconWrapper}::before {
-      width: 80px;
-      height: 80px;
-      position:absolute;
-      display:inline-block;
+
+    &::before {
+      content:"";
+      position: absolute;
+      display: inline-block;
+      background-color: #FFFFFF1A;
+      width:80px;
+      height:80px;
+      transform: rotate(-45deg);
+      z-index:-1;
+      
     }
   }
 `
+

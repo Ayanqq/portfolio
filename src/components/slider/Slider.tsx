@@ -37,6 +37,7 @@ const Slide = styled.div`
 `
 
 const Text = styled.p`
+  margin-top:52px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -54,7 +55,7 @@ const Name = styled.span`
 
 `
 const Pagination = styled.span`
-
+  margin-top:-10px;
   span {
     display: inline-block;
     width: 7px;

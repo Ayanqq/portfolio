@@ -10,12 +10,14 @@ export const Button = styled.button`
   height:32px;
   position:relative;
   z-index:1;
+  background-color:${theme.colors.accent};
   
   &:hover {
     &::before {
       height:100%;
       width:100%;
       z-index: -1;
+      
     }
   }
   
@@ -24,7 +26,6 @@ export const Button = styled.button`
     display:inline-block;
     height:10px;
     width:50%;
-    background-color: ${theme.colors.accent};
     
     position:absolute;
     bottom:0;

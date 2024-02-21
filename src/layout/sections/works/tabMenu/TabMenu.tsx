@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import {StyledLink} from "../../../../components/Link";
+import {theme} from "../../../../styles/Theme";
 
 
 export const TabMenu = (props: { menuItems: Array<string> }) => {
@@ -21,13 +22,19 @@ export const TabMenu = (props: { menuItems: Array<string> }) => {
 // [{titleIg:'',subCards:[{},{},{}]},{},{}]
 
 const StyledTabMenu = styled.nav`
-  margin-bottom: 40px;
+  //margin-bottom: 40px;
 
   ul {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    max-width:352px;
+    width:100%;
+    
+    margin:0 auto 40px;
+    
   }
+  
+  
 `
 const StyledLinkItem = styled.li`
   

@@ -31,8 +31,12 @@ const StyledHeaderMenu = styled.nav`
   ul {
     display: flex;
     gap: 30px;
-    justify-content: center;
+    justify-content: space-between;
   }
+  @media ${theme.media.tablet} {
+    display:none;
+  }
+  
 `
 
 const Link = styled.a`
