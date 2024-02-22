@@ -4,7 +4,7 @@ import {StyledLink} from "../../../../components/Link";
 
 
 
-export const TabMenu = (props: { menuItems: Array<string> }) => {
+export const TabMenu:React.FC<{menuItems: Array<string>}> = (props: { menuItems: Array<string> }) => {
     return (
         <div>
             <StyledTabMenu>
@@ -19,11 +19,9 @@ export const TabMenu = (props: { menuItems: Array<string> }) => {
         </div>
     );
 };
-// [{titleIg:'',subCards:[{},{},{}]},{},{}]
+
 
 const StyledTabMenu = styled.nav`
-  //margin-bottom: 40px;
-
   ul {
     display: flex;
     justify-content: space-between;
@@ -37,7 +35,6 @@ const StyledTabMenu = styled.nav`
   
 `
 const StyledLinkItem = styled.li`
-  
 `
 
 

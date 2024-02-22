@@ -4,7 +4,7 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
 import {theme} from "../../../styles/Theme";
 
-export const Slogan = () => {
+export const Slogan:React.FC = () => {
     return (
         <StyledSlogan>
             <SectionTitle>I Am Available For Freelance</SectionTitle>

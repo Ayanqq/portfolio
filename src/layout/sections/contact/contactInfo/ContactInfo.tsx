@@ -6,7 +6,7 @@ type ContactInfoPropsType = {
     rightText: string;
 }
 
-export const ContactInfo = (props: ContactInfoPropsType) => {
+export const ContactInfo:React.FC<ContactInfoPropsType> = (props: ContactInfoPropsType) => {
     return (
         <StyledContactInfo>
             <StyledInfo>
