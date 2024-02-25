@@ -9,11 +9,7 @@ const Footer = styled.footer`
 
 `
 const Name = styled.h3`
-  //font-family: 'Josefin Sans', sans-serif;
-  //font-size: 22px;
-  //font-weight: 700;
   letter-spacing: 3px;
-
   ${font({family: "'Josefin Sans', sans-serif ", weight: 700, Fmax: 22, Fmin: 16})};
 
 `
@@ -34,6 +30,7 @@ const SocialLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: ${theme.animations.transition};
 
 
   color: ${theme.colors.accent};

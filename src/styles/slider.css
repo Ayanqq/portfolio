@@ -6,6 +6,7 @@
     display: inline-block;
     width: 7px;
     height: 7px;
+    transition:0.2s ease-in-out;
 
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.5);
@@ -21,6 +22,7 @@
 
 
 .alice-carousel__dots-item:not(.__custom).__active {
+
     width:20px;
     background-color: #259eff;
 }

@@ -12,7 +12,6 @@ const Slider = styled.div`
 `
 
 const Slide = styled.div`
-
   text-align: center;
 `
 
@@ -49,6 +48,8 @@ const Pagination = styled.span`
     &.active {
       width:20px;
       background-color: ${theme.colors.accent};
+      
+      
     }
     
   }

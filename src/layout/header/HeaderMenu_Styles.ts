@@ -48,6 +48,8 @@ const NavLink = styled(Link)`
     z-index: 1;
 
     transform: scale(0);
+    
+    transition: ${theme.animations.transition};
   }
 
   &:hover, &.active {
@@ -58,6 +60,7 @@ const NavLink = styled(Link)`
     ${Mask} {
       transform: skewX(12deg) translateX(5px);
       color: ${theme.colors.font};
+      transition: ${theme.animations.transition};
 
       & + ${Mask} {
         transform: skewX(12deg) translateX(-5px);
@@ -136,13 +139,15 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>
       bottom: 0;
       z-index: 99999;
       background-color: #1F1F20E5;
-      display: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform:translateY(-100%);
+      transition: ${theme.animations.transition};
 
 
       ${props => props.isOpen && css<{ isOpen: boolean }>`
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        transform:translateY(0%);
       `}
       ul {
         display: flex;

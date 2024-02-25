@@ -28,6 +28,8 @@ export const StyledLink = styled.a<{active?:boolean}>`
     right: 0;
     z-index: -1;
     background-color: ${theme.colors.accent};
+    transition: ${theme.animations.transition};
+    height:0;
     
     ${props => props.active && css<{active?:boolean}>`
       height:10px;
