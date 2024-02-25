@@ -21,7 +21,7 @@ export const Work = (props: WorkPropsType) => {
             <S.StyledDescription>
                 <S.Title>{props.title}</S.Title>
                 <S.Description>{props.description}</S.Description>
-                <StyledLink href={"#"}>demo</StyledLink>
+                <StyledLink active href={"#"}>demo</StyledLink>
                 <StyledLink href={"#"}>code</StyledLink>
             </S.StyledDescription>
 

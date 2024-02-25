@@ -3,9 +3,11 @@ import {theme} from "../../styles/Theme";
 
 const Slider = styled.div`
   max-width: 500px;
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border:1px solid red;
 
 `
 
@@ -15,7 +17,6 @@ const Slide = styled.div`
 `
 
 const Text = styled.p`
-  margin-top:52px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;

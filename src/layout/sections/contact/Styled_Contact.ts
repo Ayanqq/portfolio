@@ -3,11 +3,14 @@ import {theme} from "../../../styles/Theme";
 import styled from "styled-components";
 import {SectionTitle} from "../../../components/SectionTitle";
 import {Button} from "../../../components/Button";
+import {inputLabelPropsType} from "./Contact";
 
 const Contact = styled.section`
   ${SectionTitle} {
     letter-spacing: 0;
   }
+  
+  position:relative;
 `
 const ContactForm = styled.div`
   flex-grow: 1;
@@ -44,7 +47,7 @@ const Label = styled.form`
 `
 
 
-const Input = styled.input`
+const Input = styled.input<Omit<inputLabelPropsType, 'text'>>`
   background-color: #252527;
   height: 50px;
   border: 1px solid #4A4A4A;

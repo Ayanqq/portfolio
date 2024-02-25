@@ -10,7 +10,7 @@ export const ContactInfo:React.FC<ContactInfoPropsType> = (props: ContactInfoPro
     return (
         <StyledContactInfo>
             <StyledInfo>
-                <StyledLeftText>{props.leftText}</StyledLeftText>
+                <StyledLeftText   >{props.leftText}</StyledLeftText>
                 <StyledRightText>{props.rightText}</StyledRightText>
             </StyledInfo>
         </StyledContactInfo>

@@ -80,6 +80,10 @@ const Name = styled.h2`
 const StyledH1 = styled.h1`
   font-size: 27px;
   font-weight: 400;
+  
+  p {
+    display:none;
+  }
 
   ${font({weight: 400, Fmax: 27, Fmin: 20})};
 

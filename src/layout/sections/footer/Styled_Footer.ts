@@ -5,6 +5,7 @@ import {font} from "../../../styles/Common";
 const Footer = styled.footer`
   background-color: #1F1F20;
   padding: 40px 0;
+  position: relative;
 
 `
 const Name = styled.h3`

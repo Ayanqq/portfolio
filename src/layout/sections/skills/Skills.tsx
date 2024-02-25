@@ -49,7 +49,7 @@ const cardsData = [
 
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id="skills">
             <Container>
                 <SectionTitle>What I Do</SectionTitle>
                 <FlexWrapper justify={"space-between"} align={"center"} wrap={"wrap"} gap={"30px"}
@@ -75,5 +75,5 @@ export const Skills = () => {
 };
 
 const StyledSkills = styled.section`
-
+  position:relative;
 `
