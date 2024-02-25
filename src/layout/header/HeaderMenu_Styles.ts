@@ -1,14 +1,7 @@
 import {theme} from "../../styles/Theme";
 import styled, {css} from "styled-components";
+import {Link} from 'react-scroll';
 
-const Link = styled.a`
-  color:${theme.colors.accent};
-  font-size: 30px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  text-align: center;
-
-`
 const Mask = styled.span`
   position: absolute;
   top: 0;
@@ -30,9 +23,17 @@ const Mask = styled.span`
 `
 
 
-
 const MenuItem = styled.li`
   position: relative;
+`
+
+
+const NavLink = styled(Link)`
+  color: ${theme.colors.accent};
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
 
   &::before {
     content: "";
@@ -45,17 +46,15 @@ const MenuItem = styled.li`
     left: -10px;
     right: -10px;
     z-index: 1;
-    
+
     transform: scale(0);
   }
-  
-  &:hover {
+
+  &:hover, &.active {
     &::before {
       transform: scale(1);
     }
-  }
 
-  &:hover {
     ${Mask} {
       transform: skewX(12deg) translateX(5px);
       color: ${theme.colors.font};
@@ -65,7 +64,10 @@ const MenuItem = styled.li`
       }
     }
   }
-  `
+  
+
+`
+
 
 // Mobile Menu
 
@@ -91,7 +93,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     bottom: 50px;
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
-      background-color: rgba(255,255,255, 0);
+      background-color: rgba(255, 255, 255, 0);
     `}
     &::before {
       content: '';
@@ -101,10 +103,10 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       background-color: ${theme.colors.font};
       position: absolute;
       transform: translateY(-10px);
-      
+
       ${props => props.isOpen && css<{ isOpen: boolean }>`
-          transform: rotate(-45deg) translateY(0);
-    `}
+        transform: rotate(-45deg) translateY(0);
+      `}
     }
 
     &::after {
@@ -118,12 +120,11 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
       ${props => props.isOpen && css<{ isOpen: boolean }>`
         transform: rotate(45deg) translateY(0);
-        width:36px;
-    `}
+        width: 36px;
+      `}
     }
   }
 `
-
 
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>
@@ -136,7 +137,7 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>
       z-index: 99999;
       background-color: #1F1F20E5;
       display: none;
-      
+
 
       ${props => props.isOpen && css<{ isOpen: boolean }>`
         display: flex;
@@ -168,19 +169,19 @@ const DesktopMenu = styled.nav`
 
 const Header = styled.header`
   background-color: rgba(31, 31, 32, 0.9);
-  padding:10px 0;
-  position:fixed;
+  padding: 10px 0;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99999;
-  
-  
+
+
 `
 
 
 export const S = {
-    Link,
+    NavLink,
     Mask,
     MenuItem,
     MobileMenu,

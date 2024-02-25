@@ -32,8 +32,6 @@ export const GlobalStyled = createGlobalStyle`
     border: 0 none #ffffff;
   }
   
-
-
   body {
     margin: 0;
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
