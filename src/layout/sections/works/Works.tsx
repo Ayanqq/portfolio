@@ -7,7 +7,7 @@ import {Work} from "./work/Work";
 import socialImg from "../../../assets/images/project1.webp"
 import timerImg from "../../../assets/images/project2.webp"
 import {Container} from "../../../components/Container";
-
+import {AnimatePresence, motion} from "framer-motion"
 
 const tabsItems:Array<{ status: TabsStatusType, title: string }> = [
     {
@@ -75,11 +75,18 @@ export const Works:React.FC = () => {
                          changeFilterStatus={changeFilterStatus}
                          currentFilterStatus={currentFilterStatus}/>
                 <FlexWrapper justify={"space-between"} align={"flex-start"} wrap={"wrap"} gap={"30px"}>
+                    <AnimatePresence>
                     {filteredWorks.map((w, index) => {
-                        return  <Work src={w.src} key={index}
+                        return (
+                            <motion.div>
+                                <Work src={w.src} key={index}
                                       title={w.title}
                                       description={w.description}/>
+                            </motion.div>
+
+                        )
                     })}
+                    </AnimatePresence>
                 </FlexWrapper>
             </Container>
         </StyledWorks>
