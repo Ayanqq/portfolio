@@ -16,10 +16,10 @@ function App() {
             <Particle/>
             <Header/>
             <Main/>
-            <Skills/>
+            {/*<Skills/>*/}
             <Works/>
             <Testimony/>
-            <Contact />
+            {/*<Contact />*/}
             <Slogan/>
             <Footer/>
             <GoTopBtn/>
