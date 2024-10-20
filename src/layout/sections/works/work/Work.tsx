@@ -8,21 +8,24 @@ type WorkPropsType = {
     src: string;
     title: string;
     description: string;
+    href:string
+    codeBase:string
 }
 export const Work = (props: WorkPropsType) => {
+
     return (
         <S.StyledWork>
             <S.ImageWrapper>
                 <S.Image src={props.src} alt=""/>
-                <Button>View Project</Button>
+                <Button href={props.href}>View Project</Button>
             </S.ImageWrapper>
 
 
             <S.StyledDescription>
                 <S.Title>{props.title}</S.Title>
                 <S.Description>{props.description}</S.Description>
-                <StyledLink active href={"#"}>demo</StyledLink>
-                <StyledLink href={"#"}>code</StyledLink>
+                <StyledLink active href={props.href}>demo</StyledLink>
+                <StyledLink href={props.codeBase}>code</StyledLink>
             </S.StyledDescription>
 
         </S.StyledWork>

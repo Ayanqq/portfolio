@@ -22,12 +22,10 @@ const Slide = (props:SlidePropsType) => {
 
 
 const items = [
-   <Slide text={"Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum"}
-          userName={"I Ivanov"}/>,
-   <Slide text={"Lorem ipsum"}
-          userName={"I Ivanov"}/>,
-   <Slide text={"Lorem ipsum"}
-          userName={"I Ivanov"}/>
+   <Slide text={"There has not yet been a person born who could not become a programmer"}
+          userName={"Igor U."}/>,
+   <Slide text={"Maybe later"}
+          userName={"Maybe later"}/>,
 ];
 
 export const Slider = () => (

@@ -7,6 +7,7 @@ import {Slogan} from "./layout/sections/slogan/Slogan";
 import {Footer} from "./layout/sections/footer/Footer";
 import {Particle} from "./components/particle/Particle";
 import {GoTopBtn} from "./components/goTopBtn/GoTopBtn";
+import {Skills} from "./layout/sections/skills v2/Skills";
 
 function App() {
     return (
@@ -14,7 +15,7 @@ function App() {
             <Particle/>
             <Header/>
             <Main/>
-            {/*<Skills/>*/}
+            <Skills/>
             <Works/>
             <Testimony/>
             {/*<Contact />*/}

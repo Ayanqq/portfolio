@@ -4,8 +4,8 @@ import {SectionTitle} from "../../../components/SectionTitle";
 import {TabMenu, TabsStatusType} from "./tabMenu/TabMenu";
 import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Work} from "./work/Work";
-import socialImg from "../../../assets/images/project1.webp"
-import timerImg from "../../../assets/images/project2.webp"
+import todolistImg from "../../../assets/images/project3.png"
+import counterImg from "../../../assets/images/project4.png"
 import {Container} from "../../../components/Container";
 import {AnimatePresence, motion} from "framer-motion"
 
@@ -30,15 +30,19 @@ const tabsItems:Array<{ status: TabsStatusType, title: string }> = [
 
 const worksData = [
     {
-        src:socialImg,
-        title:"Social Network",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        src:todolistImg,
+        title:"Todolist",
+        description:"Todolist web application, includes CRUD actions. Used technologies: material ui, react, rtk",
+        href:'https://ayanqq.github.io/tasker/#/login',
+        codeBase:'https://github.com/Ayanqq/tasker',
         type: "spa"
     },
     {
-        src:timerImg,
-        title:"Timer",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        src:counterImg ,
+        title:"Counter",
+        description:"Simple counter, you could add two numbers and click to count. Used technologies: react, rtk",
+        href:'https://ayanqq.github.io/counter_2.0/',
+        codeBase:'https://github.com/Ayanqq/counter_2.0',
         type:"react"
     },
 ]
@@ -81,7 +85,10 @@ export const Works:React.FC = () => {
                             <motion.div>
                                 <Work src={w.src} key={index}
                                       title={w.title}
-                                      description={w.description}/>
+                                      description={w.description}
+                                      href={w.href}
+                                      codeBase={w.codeBase}
+                                />
                             </motion.div>
 
                         )
