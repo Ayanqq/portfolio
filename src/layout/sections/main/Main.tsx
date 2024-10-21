@@ -14,7 +14,7 @@ export const Main: FC = () => {
                 <FlexWrapper align={"center"} justify={"space-between"} wrap={"wrap"}>
                     <div>
                         <S.SmallText>Hi There</S.SmallText>
-                        <S.Name>I am <span>Ayan Naziyev</span></S.Name>
+                        <S.Name>I am <span>Ayan Nazbiyev</span></S.Name>
                         <S.StyledH1>
                             <p>A Web Developer</p>
                             <Typewriter
