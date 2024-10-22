@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import {font} from "../../../styles/Common";
 import {theme} from "../../../styles/Theme";
+import {Button} from "../../../components/Button";
 
 const StyledMain = styled.section`
-  min-height: 100vh;
-  display: flex;
+    min-height: 100vh;
+    display: flex;
+
+    ${Button} {
+        margin-top:50px;
+        height:50px;
+    }
 `
 
 const PhotoWrapper = styled.div`
@@ -98,12 +104,14 @@ const SmallText = styled.span`
   font-weight: 400;
 `
 
+
+
 export const S = {
     StyledMain,
     PhotoWrapper,
     StyledImg,
     Name,
     StyledH1,
-    SmallText
+    SmallText,
 
 }

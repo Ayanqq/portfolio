@@ -5,6 +5,8 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from "./Main_Styles";
 import Typewriter from 'typewriter-effect';
+import {Button} from "../../../components/Button";
+import styled from "styled-components";
 
 
 export const Main: FC = () => {
@@ -19,7 +21,7 @@ export const Main: FC = () => {
                             <p>A Web Developer</p>
                             <Typewriter
                                 options={{
-                                    strings: ['A Web Developer', 'yes yes yes'],
+                                    strings: ['Frontend Developer 💻', 'Looking for job 😁'],
                                     autoStart: true,
                                     loop: true,
                                     delay:70,
@@ -27,6 +29,7 @@ export const Main: FC = () => {
                                 }}
                             />
                         </S.StyledH1>
+                        <Button className={'btnCV'}> Download CV </Button>
                     </div>
                     <Tilt>
                         <S.PhotoWrapper>
@@ -38,6 +41,4 @@ export const Main: FC = () => {
         </S.StyledMain>
     );
 };
-
-
 
