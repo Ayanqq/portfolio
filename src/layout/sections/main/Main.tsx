@@ -29,7 +29,7 @@ export const Main: FC = () => {
                                 }}
                             />
                         </S.StyledH1>
-                        <Button className={'btnCV'}> Download CV </Button>
+                        <Button className={'btnCV'} href={'https://drive.google.com/file/d/1Y9AIi6afMobhjIgxhRznS9E96BwzHwXO/view?usp=sharing'} target={'_blank'}> Download CV </Button>
                     </div>
                     <Tilt>
                         <S.PhotoWrapper>

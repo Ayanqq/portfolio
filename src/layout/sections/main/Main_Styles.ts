@@ -10,7 +10,12 @@ const StyledMain = styled.section`
     ${Button} {
         margin-top:50px;
         height:50px;
+        
+        @media {
+            margin-bottom:60px;
+        }
     }
+    
 `
 
 const PhotoWrapper = styled.div`
@@ -36,6 +41,7 @@ const PhotoWrapper = styled.div`
       height: 414px;
       top: -17px;
       left:20px;
+
     }
   }
 
